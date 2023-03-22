@@ -69,7 +69,7 @@ client.on("messageCreate", async (message) => {
 	message.channel.sendTyping();
 	
 	try {
-		const response = await fetch("htftps://api.openai.com/v1/completions", {
+		const response = await fetch("https://api.openai.com/v1/completions", {
 			method: "POST",
 			headers: {
 				"Content-Type": "application/json",
